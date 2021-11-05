@@ -1,6 +1,7 @@
 django
 libgravatar
 beautifulsoup4
+requests
 wordcloud
 django-heroku
 gunicorn
