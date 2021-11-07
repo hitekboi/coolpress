@@ -18,5 +18,6 @@ urlpatterns = [
     path('user/<int:pk>', views.CooluserDetail.as_view(), name='cooluser-detail'),
     path('users/', views.CooluserList.as_view(), name='cooluser-list'),
     path('posts-filtered/', views.search_ajax, name='search-ajax'),
+    path('posts/<int:author_id>/', views.PostsByAuthor.as_view(), name='post-author'),
     path('post-filtered/', views.PostFilteredByText.as_view(), name='post-filtered'),
 ]
